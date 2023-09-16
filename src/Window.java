@@ -6,7 +6,7 @@ import javax.swing.*;
 public class Window {
     final static String BUTTONPANEL = "Tab with JButtons";
     final static String TEXTPANEL = "Tab with JTextField";
-    final static int extraWindowWidth = 100;
+    final static int extraWindowWidth = 1000;
 
     public void addComponentToPane(Container pane) {
         JTabbedPane tabbedPane = new JTabbedPane();
