@@ -35,10 +35,10 @@ public class RequestMaker {
 		} catch (IOException e1) {
 			String currentLogText = logWindow.getText();
 			logWindow.setText(currentLogText + "\n" + "Error");
+			System.out.println(e1);
 		} finally {
 			String currentLogText = logWindow.getText();
 			logWindow.setText(currentLogText + "\n" + log);
 		}
 	}
-
 }

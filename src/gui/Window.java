@@ -264,7 +264,7 @@ public class Window {
 		JButton btnNewButton_11 = new JButton("Stop");
 		btnNewButton_11.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				RequestMaker.makeRequest("/minecraft/stop_ftb", textPane);
+				RequestMaker.makeRequest("/minecraft/stop_beta", textPane);
 			}
 		});
 		btnNewButton_11.setBounds(434, 235, 89, 23);
@@ -289,11 +289,7 @@ public class Window {
 		minecraft.add(btnNewButton_13);
 		
 		JButton btnNewButton_14 = new JButton("Clear");
-		btnNewButton_14.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-			}
-		});
-		btnNewButton_2.addMouseListener(new MouseAdapter() {
+		btnNewButton_14.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				textPane.setText(null);
@@ -322,5 +318,20 @@ public class Window {
 		
 		btnNewButton_5.setBounds(10, 11, 153, 23);
 		main.add(btnNewButton_5);
+		
+		JLabel lblNewLabel_8 = new JLabel("DISABLED");
+		lblNewLabel_8.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNewLabel_8.setBounds(474, 171, 80, 29);
+		main.add(lblNewLabel_8);
+		
+		JLabel lblNewLabel_8_1 = new JLabel("DISABLED");
+		lblNewLabel_8_1.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNewLabel_8_1.setBounds(474, 204, 80, 29);
+		main.add(lblNewLabel_8_1);
+		
+		JLabel lblNewLabel_8_2 = new JLabel("DISABLED");
+		lblNewLabel_8_2.setFont(new Font("Tahoma", Font.PLAIN, 14));
+		lblNewLabel_8_2.setBounds(474, 136, 80, 29);
+		main.add(lblNewLabel_8_2);
 	}
 }
